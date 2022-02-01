@@ -1,0 +1,135 @@
+
+:root{
+    --preta: #141414;
+    --vermelho: #E50914;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--preta);
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+}
+
+header .logo{
+    color:var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 60px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+    justify-content: center;
+
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgb(0,0,0,.75),rgb(0,0,0,.75)100%), url('/img/capa.jpg');
+     
+    height: 800px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal img{
+    height: 100%;
+    width: 100%;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-top: 20px;
+
+}
+
+.titulo{
+    margin-top: 40%;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.botao{
+    background-color: rgb(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 20px 80px;
+    margin-right: 10px;
+    font-size: 16px;
+    
+    cursor: pointer;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.fas{
+    margin-right: 20px;
+    height: 50%;
+}
+
+.filme-principal.container{
+    margin-left: 100px;
+}
+
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.h2{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color:white;
+}
+
+.carrosel {
+    margin-top: 10px;
+}
+
+.item:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.item{
+    max-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
